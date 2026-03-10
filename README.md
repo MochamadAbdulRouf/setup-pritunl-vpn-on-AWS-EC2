@@ -109,4 +109,4 @@ sudo systemctl enable pritunl mongod
 ```
 
 
-	Pritunl mendukung protokol OpenVPN dan WireGuard, perlu menginstall setidaknya salah satu dari keduanya. Secara default, pritunl menggunakan OpenVPN. Pritunl akan membuat file konfigurasi sementara di direktori /tmp. Kita dapat melihat detail koneksi dengan menggunakan argumen --management yang terdapat di file konfigurasi sementara tersebut.
+`Pritunl` mendukung protokol `OpenVPN` dan `WireGuard`, perlu menginstall setidaknya salah satu dari keduanya. Secara default, `pritunl` menggunakan `OpenVPN`. `Pritunl` akan membuat file konfigurasi sementara di direktori `/tmp`. Kita dapat melihat detail koneksi dengan menggunakan argumen `--management` yang terdapat di file konfigurasi sementara tersebut.
