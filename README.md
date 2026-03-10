@@ -22,7 +22,7 @@ Ketika pengguna mencoba mengakses **resource private AWS** yang berada pada jari
 
 ## Pritunl VPN Workflow 
 Berikut diagram yang memperlihatkan flow traffic mengakses AWS Private Resources menggunakan Pritunl VPN server.
-![[workflow-pritunl.png]]
+![[./images/workflow-pritunl.png]]
 
 
 ## Implementation
@@ -34,7 +34,7 @@ Di implementasi awal kita memerlukan untuk setup:
 	-  VPC: default
 	-  Security Group: default vpc
 2. Security Group, Inbound rule: 
-	![[inbound-rule.png]]
+	![[./images/inbound-rule.png]]
 
 Lakukan remote pada instance, untuk implementasi konfigurasi `pritunl vpn`. bisa menggunakan `connect with browser` atau `melakukan ssh dari cmd menggunakan key pair` 
 
@@ -87,7 +87,7 @@ Download GPG Keys `Pritunl` packages
 curl -fsSL https://raw.githubusercontent.com/pritunl/pgp/master/pritunl_repo_pub.asc | sudo gpg -o /usr/share/keyrings/pritunl.gpg --dearmor --yes
 ```
 
-### ### Install Pritunl, OpenVPN, MongoDB, dan Wireguard
+### Install Pritunl, OpenVPN, MongoDB, dan Wireguard
 
 `Pritunl` bukan sebuah `VPN` secara langsung, sebaliknya `Pritunl` berfungsi sebagai layer management untuk server `vpn` seperti `OpenVPN` dan `WireGuard`. `Pritunl` menghandle bagian user management, connection routing, dan menyediakan antarmuka web.
 
