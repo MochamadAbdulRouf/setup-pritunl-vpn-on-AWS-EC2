@@ -22,8 +22,7 @@ Ketika pengguna mencoba mengakses **resource private AWS** yang berada pada jari
 
 ## Pritunl VPN Workflow 
 Berikut diagram yang memperlihatkan flow traffic mengakses AWS Private Resources menggunakan Pritunl VPN server.
-![[./images/workflow-pritunl.png]]
-
+![workflow-pritunl](./images/workflow-pritunl.png)
 
 ## Implementation
 
@@ -34,7 +33,7 @@ Di implementasi awal kita memerlukan untuk setup:
 	-  VPC: default
 	-  Security Group: default vpc
 2. Security Group, Inbound rule: 
-	![[./images/inbound-rule.png]]
+	![security-group](./images/inbound-rule.png)
 
 Lakukan remote pada instance, untuk implementasi konfigurasi `pritunl vpn`. bisa menggunakan `connect with browser` atau `melakukan ssh dari cmd menggunakan key pair` 
 
