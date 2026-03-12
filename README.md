@@ -284,3 +284,8 @@ Jika status `nginx` running, Buka browser dan masukan private ip. Seharusnya aka
 
 
 > Dalam environment nyata, Seluruh jaringan akan bersifat private kecuali yang menjadi host dari server `Pritunl`, Kita bisa menggunakan `VPC Peering` untuk menghubungkan berbagai `VPC` agar dapat berkomunikasi satu sama lain melalui server `VPN`.
+
+
+
+Gambar berikut menunjukkan keseluruhan alur kerja dari setup Pritunl kita dan alur traffic-nya.
+![gif-infra-pritunl](./images/pritunl-gif.gif)
