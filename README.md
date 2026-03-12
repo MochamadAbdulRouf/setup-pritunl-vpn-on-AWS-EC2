@@ -255,11 +255,11 @@ Untuk itu, perlu membuat `EC2 Instance` dengan `private subnet` yang telah dikon
 
 
 Hal yang paling penting agar instances bisa terhubung dengan `Pritunl Server`,  yaitu gunakan `VPC` dan `security group` yang sama dengan `Pritunl Server`.
-![setting-network](network-sett.png)
+![setting-network](./images/network-sett.png)
 
 
 Jika instances sudah ber status running, Copy `private ip` untuk mencoba validasi `VPN Setup`. 
-![private-ip](copy-private-ip.png)
+![private-ip](./images/copy-private-ip.png)
 
 Lalu coba lakukan `SSH` menggunakan `private IP` dari local device.
 > Pastikan Pritunl client sedang aktif
@@ -267,7 +267,7 @@ Lalu coba lakukan `SSH` menggunakan `private IP` dari local device.
 ssh -i <PATH_TO_KEY_PAIRS> ubuntu@<PRIVATE_IP>
 ```
 
-![cmd-test](cmd-test-ssh.png)
+![cmd-test](./images/cmd-test-ssh.png)
 
 Jika semua konfigurasi sudah benar, kita tidak akan mengalami error ketika melakukan `SSH` menggunakan `private ip` dari local device. Kalau sudah berhasil connect, coba lakukan installasi `nginx web server`, untuk testing `HTTP` Access.
 ```bash
